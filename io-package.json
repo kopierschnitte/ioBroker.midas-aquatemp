@@ -1,0 +1,108 @@
+{
+	"common": {
+		"name": "midas-aquatemp",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Midas Aquatemp",
+		"titleLang": {
+			"en": "Midas Aquatemp",
+			"de": "Midas Aquatemp",
+			"ru": "Midas Aquatemp",
+			"pt": "Midas Aquatemp",
+			"nl": "Midas Aquatemp",
+			"fr": "Midas Aquatemp",
+			"it": "Midas Aquatemp",
+			"es": "Midas Aquatemp",
+			"pl": "Midas Aquatemp",
+			"zh-cn": "Midas Aquatemp"
+		},
+		"desc": {
+			"en": "Control Midas and Aquatemp compatible pool heat pumps",
+			"de": "Control Midas and Aquatemp compatible pool heat pumps",
+			"ru": "Control Midas and Aquatemp compatible pool heat pumps",
+			"pt": "Control Midas and Aquatemp compatible pool heat pumps",
+			"nl": "Control Midas and Aquatemp compatible pool heat pumps",
+			"fr": "Control Midas and Aquatemp compatible pool heat pumps",
+			"it": "Control Midas and Aquatemp compatible pool heat pumps",
+			"es": "Control Midas and Aquatemp compatible pool heat pumps",
+			"pl": "Control Midas and Aquatemp compatible pool heat pumps",
+			"zh-cn": "Control Midas and Aquatemp compatible pool heat pumps"
+		},
+		"authors": [
+			"kopierschnitte <chris@bispingweb.de>"
+		],
+		"keywords": [
+			"midas",
+			"aquatemp",
+			"pool"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "midas-aquatemp.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/kopierschnitte/ioBroker.midas-aquatemp/main/admin/midas-aquatemp.png",
+		"readme": "https://github.com/kopierschnitte/ioBroker.midas-aquatemp/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "climate-control",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"username": "",
+		"password": "",
+		"pollinterval": "20"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

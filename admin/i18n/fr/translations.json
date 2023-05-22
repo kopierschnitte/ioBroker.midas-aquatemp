@@ -1,0 +1,6 @@
+{
+	"midas-aquatemp adapter settings": "Paramètres d'adaptateur pour midas-aquatemp",
+	"username": "Username",
+	"password": "Password",
+	"pollinterval": "Polling interval (sec)"
+}

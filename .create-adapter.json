@@ -1,0 +1,60 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "midas-aquatemp",
+	"title": "Midas Aquatemp",
+	"description": "Control Midas and Aquatemp compatible pool heat pumps",
+	"keywords": [
+		"midas",
+		"aquatemp",
+		"pool"
+	],
+	"contributors": "",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "climate-control",
+	"startMode": "daemon",
+	"connectionType": "cloud",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "username",
+			"label": "Username",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "password",
+			"label": "Password",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "pollinterval",
+			"label": "Polling interval (sec)",
+			"inputType": "number",
+			"defaultValue": "20"
+		}
+	],
+	"language": "JavaScript",
+	"adminReact": "yes",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"tools": [],
+	"authorName": "kopierschnitte",
+	"authorGithub": "kopierschnitte",
+	"authorEmail": "chris@bispingweb.de",
+	"license": "MIT License",
+	"i18n": "words.js",
+	"es6class": "no",
+	"gitRemoteProtocol": "HTTPS",
+	"dependabot": "yes",
+	"nodeVersion": "14",
+	"adminUi": "json",
+	"target": "github",
+	"creatorVersion": "2.3.0"
+}
